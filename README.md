@@ -1,13 +1,13 @@
-# Spring Boot 3.0 Security with JWT Implementation
+## Spring Boot 3.0 Security with JWT Implementation
 
-## Features
+### Features
 
 - User registration and login with JWT authentication
 - Password encryption using BCrypt
 - Role-based authorization with Spring Security
 - Customized access denied handling
 
-## Technologies
+### Tech Stack
 
 - Spring Boot 3.0
 - Spring Security
@@ -18,7 +18,7 @@
 - BCrypt
 - Maven
 
-## Getting Started
+### Getting Started
 
 To get started with this project, you will need to have the following installed on your local machine:
 
@@ -27,9 +27,28 @@ To get started with this project, you will need to have the following installed 
 
 To build and run the project, follow these steps:
 
-- Clone the repository: `git clone git@github.com:pulidodev/jwt-auth.git`
-- Navigate to the project directory: cd jwt-auth
-- Build the project: mvn clean install
-- Run the project: mvn spring-boot:run
+Clone the project
+
+```bash
+  git clone git@github.com:pulidodev/jwt-auth.git
+```
+
+Go to the project directory
+
+```bash
+  cd jwt-auth
+```
+
+Build the project
+
+```bash
+  mvn clean install
+```
+
+Run the project
+
+```bash
+  mvn spring-boot:run
+```
 
 -> The application will be available at http://localhost:8080
