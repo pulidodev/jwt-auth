@@ -9,6 +9,7 @@ import com.pulidodev.security.config.jwt.JwtProvider;
 import com.pulidodev.security.dto.AuthenticationRequestDto;
 import com.pulidodev.security.dto.AuthenticationResponseDto;
 import com.pulidodev.security.dto.RegisterRequestDto;
+import com.pulidodev.security.model.Role;
 import com.pulidodev.security.model.User;
 import com.pulidodev.security.repository.UserRepository;
 import com.pulidodev.security.service.AuthenticationService;
@@ -34,6 +35,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
                                 .lastName(request.getLastName())
                                 .email(request.getEmail())
                                 .password(passwordEncoder.encode(request.getPassword()))
+                                .role(Role.USER)
                                 .build();
 
                 repository.save(user);
